@@ -22,7 +22,7 @@ class CardAdded : AppCompatActivity() {
         }
 
         gotoMainPage.setOnClickListener {
-            startActivity(Intent(this,MainPage::class.java))
+            startActivity(Intent(this,MainPg::class.java))
         }
     }
 }

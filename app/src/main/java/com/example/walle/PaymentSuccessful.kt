@@ -16,7 +16,7 @@ class PaymentSuccessful : AppCompatActivity() {
         goToMainPage = findViewById(R.id.Payment_Successful_Go_To_Main_Page)
 
         goToMainPage.setOnClickListener {
-            startActivity(Intent(this,MainPage::class.java))
+            startActivity(Intent(this,MainPg::class.java))
         }
     }
 }

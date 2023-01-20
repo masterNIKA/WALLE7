@@ -24,7 +24,7 @@ class PaymentPage : AppCompatActivity() {
         }
 
         goToMainPage.setOnClickListener {
-            startActivity(Intent(this, MainPage::class.java))
+            startActivity(Intent(this, MainPg::class.java))
         }
     }
 }

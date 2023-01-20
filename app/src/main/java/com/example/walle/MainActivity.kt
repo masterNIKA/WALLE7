@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful){
                         Toast.makeText(this,"Login successful",Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(this,MainPage::class.java))
+                        startActivity(Intent(this,MainPg::class.java))
                     }else{
                         Toast.makeText(this,"Something went wrong",Toast.LENGTH_SHORT).show()
                     }
