@@ -40,6 +40,16 @@ class AddCard : AppCompatActivity() {
                 Toast.makeText(this, "Fill all the fields",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+
+            if (cardNumber.length != 16) {
+                Toast.makeText(this, "Card number should be 16 digits", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (cvc.length != 3) {
+                Toast.makeText(this, "CVC should be 3 digits", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
         }
     }
 }
